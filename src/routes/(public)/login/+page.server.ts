@@ -8,7 +8,7 @@ export const actions: Actions = {
         const email = formData.get("email");
         const password = formData.get("password");
 
-        const login = await fetch("https://vetrex.hu/v1/auth/login", {
+        const login = await fetch("http://192.168.50.189:3001/v1/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
